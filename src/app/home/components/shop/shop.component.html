@@ -1,0 +1,52 @@
+<div class="w-full mx-auto p-5">
+  <div class="flex gap-4">
+    <div class="w-1/4 ">
+      <h3>Filters</h3>
+      <form class="example-form">
+        <mat-form-field class="w-full">
+          <mat-label>Sort by:</mat-label>
+          <mat-select [(ngModel)]="selectedSort" (ngModelChange)="updateProducts()" name="sortOption">
+            <mat-option *ngFor="let sort of sortOptions" [value]="sort.value">
+              {{ sort.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="w-full">
+          <mat-label>Search by title</mat-label>
+          <input matInput placeholder="Sneakers..." [(ngModel)]="title" (ngModelChange)="updateProducts()"
+                 name="testInput">
+        </mat-form-field>
+        <mat-label>Search by price</mat-label>
+        <mat-slider [min]="minPrice" [max]="maxPrice" style="width: 100% !important;" showTickMarks discrete>
+          <input [(ngModel)]="selectedMinPrice" (ngModelChange)="updateProducts()" name="minPrice" matSliderStartThumb>
+          <input [(ngModel)]="selectedMaxPrice" (ngModelChange)="updateProducts()" name="maxPrice" matSliderEndThumb>
+        </mat-slider>
+        <section class="example-section">
+          <p class="text-lg font-bold">Brands</p>
+          <span *ngFor="let brand of brandOptions">
+            <mat-checkbox class="w-full" [value]="brand.id.toString()"
+                          [checked]="selectedBrands.includes(brand.id)"
+                          (change)="onBrandCheckboxChange(brand.id, $event)">
+              {{ brand.title }}
+            </mat-checkbox>
+          </span>
+        </section>
+        <section class="mt-4">
+          <p class="text-lg font-bold">Categories</p>
+          <span *ngFor="let category of categoryOptions">
+            <mat-checkbox class="w-full" [value]="category.id.toString()"
+                          [checked]="selectedCategories.includes(category.id)"
+                          (change)="onCategoryCheckboxChange(category.id, $event)">
+              {{ category.title }}
+            </mat-checkbox>
+          </span>
+        </section>
+      </form>
+    </div>
+    <div class="w-3/4 grid grid-cols-4 gap-4">
+      <ng-container *ngFor="let item of products">
+        <app-product-item [product]="item"></app-product-item>
+      </ng-container>
+    </div>
+  </div>
+</div>

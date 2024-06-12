@@ -1,0 +1,99 @@
+<section class="body-font relative bg-gray-900 text-gray-400">
+
+  <div class="container mx-auto px-5 py-24">
+
+    <div class="mb-12 flex w-full flex-col text-center items-center">
+      <h1 class="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact Us</h1>
+      <p class=" text-center leading-relaxed lg:w-2/3">Feel free to reach out to us! Whether you have a question,
+        feedback, or a collaboration proposal, we'd love to hear from you.
+      </p>
+    </div>
+    <div class="mx-auto md:w-2/3 lg:w-1/2">
+      <form class="-m-2 flex flex-wrap" [formGroup]="contactForm" (ngSubmit)="sendMessage()">
+
+        <!-- form -->
+        <div class="w-1/2 p-2">
+          <div class="relative">
+            <mat-form-field class="w-full">
+              <mat-label>Name</mat-label>
+              <input matInput placeholder="Ex. Peter" formControlName="name" id="nameInput">
+              <mat-error *ngIf="contactForm.get('name')?.invalid">
+                Greska
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="w-1/2 p-2">
+          <div class="relative">
+            <mat-form-field class="w-full">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Ex. example@gmail.com" formControlName="email" id="emailInput">
+              <mat-error *ngIf="contactForm.get('email')?.invalid">
+                Greska
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="mt-4 w-full p-2">
+          <div class="relative">
+            <mat-form-field class="w-full">
+              <mat-label>Leave a comment</mat-label>
+              <textarea id="messageInput" matInput rows="8" placeholder="Ex. It makes me feel..."
+                        formControlName="message"></textarea>
+              <mat-error *ngIf="contactForm.get('message')?.invalid">
+                Greska
+              </mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="w-full p-2 flex justify-center">
+
+          <button mat-flat-button color="primary">
+            Send message
+          </button>
+          <!--          <button-->
+          <!--            class="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">-->
+          <!--            Button-->
+          <!--          </button>-->
+        </div>
+
+
+        <!-- footer -->
+        <div class="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
+          <span class="inline-flex">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5"
+                   viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5"
+                   viewBox="0 0 24 24">
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                   class="h-5 w-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-4 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="h-5 w-5"
+                   viewBox="0 0 24 24">
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>
+            </a>
+          </span>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>

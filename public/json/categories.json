@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Men's Clothing"
+  },
+  {
+    "id": 2,
+    "title": "Women's Clothing"
+  },
+  {
+    "id": 3,
+    "title": "Unisex Clothing"
+  },
+  {
+    "id": 4,
+    "title": "Footwear"
+  },
+  {
+    "id": 5,
+    "title": "Accessories"
+  },
+  {
+    "id": 6,
+    "title": "Outerwear"
+  },
+  {
+    "id": 7,
+    "title": "Watches"
+  },
+  {
+    "id": 8,
+    "title": "Jewelry"
+  }
+]

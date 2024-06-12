@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Men's T-Shirt",
+    "description": "Comfortable cotton t-shirt.",
+    "price": 19.99,
+    "categoryId": 1,
+    "brandId": 1,
+    "image": "images/product-01.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Women's Jeans",
+    "description": "Skinny jeans with a modern fit.",
+    "price": 49.99,
+    "categoryId": 2,
+    "brandId": 2,
+    "image": "images/product-02.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Unisex Hoodie",
+    "description": "Warm and cozy hoodie.",
+    "price": 39.99,
+    "categoryId": 1,
+    "brandId": 3,
+    "image": "images/product-03.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Summer Dress",
+    "description": "Light and breezy summer dress.",
+    "price": 29.99,
+    "categoryId": 2,
+    "brandId": 4,
+    "image": "images/product-04.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Men's Jacket",
+    "description": "Stylish denim jacket.",
+    "price": 59.99,
+    "categoryId": 1,
+    "brandId": 5,
+    "image": "images/product-05.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Women's Blouse",
+    "description": "Elegant silk blouse.",
+    "price": 35.99,
+    "categoryId": 2,
+    "brandId": 6,
+    "image": "images/product-06.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Men's Shorts",
+    "description": "Casual summer shorts.",
+    "price": 24.99,
+    "categoryId": 1,
+    "brandId": 7,
+    "image": "images/product-07.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Women's Skirt",
+    "description": "Flowy floral skirt.",
+    "price": 27.99,
+    "categoryId": 2,
+    "brandId": 8,
+    "image": "images/product-08.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Men's Sneakers",
+    "description": "Comfortable running sneakers.",
+    "price": 79.99,
+    "categoryId": 1,
+    "brandId": 9,
+    "image": "images/product-09.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Women's Sandals",
+    "description": "Chic summer sandals.",
+    "price": 49.99,
+    "categoryId": 2,
+    "brandId": 10,
+    "image": "images/product-10.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Unisex Hat",
+    "description": "Stylish sun hat.",
+    "price": 14.99,
+    "categoryId": 1,
+    "brandId": 3,
+    "image": "images/product-11.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Men's Suit",
+    "description": "Elegant business suit.",
+    "price": 199.99,
+    "categoryId": 1,
+    "brandId": 1,
+    "image": "images/product-12.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Women's Coat",
+    "description": "Warm winter coat.",
+    "price": 89.99,
+    "categoryId": 2,
+    "brandId": 2,
+    "image": "images/product-13.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Men's Watch",
+    "description": "Classic leather strap watch.",
+    "price": 129.99,
+    "categoryId": 1,
+    "brandId": 5,
+    "image": "images/product-14.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Women's Necklace",
+    "description": "Elegant gold necklace.",
+    "price": 59.99,
+    "categoryId": 2,
+    "brandId": 6,
+    "image": "images/product-15.jpg"
+  }
+]
