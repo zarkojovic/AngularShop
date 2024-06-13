@@ -18,7 +18,7 @@
               <mat-label>Name</mat-label>
               <input matInput placeholder="Ex. Peter" formControlName="name" id="nameInput">
               <mat-error *ngIf="contactForm.get('name')?.invalid">
-                Greska
+                Name is required!
               </mat-error>
             </mat-form-field>
           </div>
@@ -29,7 +29,7 @@
               <mat-label>Email</mat-label>
               <input matInput placeholder="Ex. example@gmail.com" formControlName="email" id="emailInput">
               <mat-error *ngIf="contactForm.get('email')?.invalid">
-                Greska
+                Email is required!
               </mat-error>
             </mat-form-field>
           </div>
@@ -41,7 +41,7 @@
               <textarea id="messageInput" matInput rows="8" placeholder="Ex. It makes me feel..."
                         formControlName="message"></textarea>
               <mat-error *ngIf="contactForm.get('message')?.invalid">
-                Greska
+                Message is required!
               </mat-error>
             </mat-form-field>
           </div>

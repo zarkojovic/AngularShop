@@ -11,7 +11,7 @@ import {map} from "rxjs";
 export class CheckoutComponent implements OnInit {
   cartItems: any[] = [];
   cartDetails: any[] = [];
-
+  currentDate: Date = new Date();
   totalPrice: number = 0;
 
   constructor(
@@ -50,6 +50,7 @@ export class CheckoutComponent implements OnInit {
       });
     }
   }
+
 
   makeOrder(): void {
     this.cartService.clearCart();

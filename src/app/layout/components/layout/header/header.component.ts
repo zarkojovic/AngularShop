@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {INavItem} from "../../../interfaces/i-nav-item";
 
 @Component({
@@ -8,35 +8,30 @@ import {INavItem} from "../../../interfaces/i-nav-item";
 })
 export class HeaderComponent {
 
-  isShown: boolean = false;
   displayMobileNav: boolean = false;
-  navItems : INavItem[] = [
+  navItems: INavItem[] = [
     {
-      route:"",
-      text:"Home",
+      route: "",
+      text: "Home",
     },
     {
-      route:"shop",
-      text:"Shop"
+      route: "shop",
+      text: "Shop"
     },
     {
-      route:"contact",
-      text:"Contact"
+      route: "contact",
+      text: "Contact"
     },
     {
-      route:"author",
-      text:"Author"
+      route: "author",
+      text: "Author"
     }
   ];
 
-  toggleDropdown(): void {
-    this.isShown = !this.isShown;
-  }
 
   toggleMobileNav(): void {
     this.displayMobileNav = !this.displayMobileNav;
   }
-
 
 
 }
